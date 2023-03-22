@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"> </script>
+  
+  <title>Sudoku</title>
+</head>
+<body>
+    
+  <div class="tab">
+    <h2>SUDOKU PLAYER<br>&<br>SOLVER </h2>
+  <div class="wrapper">
+    
+  <table>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="1"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="2"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="3"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="4"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="5"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="6"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="7"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="8"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="9"></td> 
+    </tr>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="10"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="11"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="12"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="13"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="14"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="15"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="16"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="17"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="18"></td> 
+    </tr>
+    <tr> <td><input type="number" oninput="onChange(this.id)" id="19"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="20"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="21"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="22"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="23"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="24"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="25"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="26"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="27"></td> 
+    </tr>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="28"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="29"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="30"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="31"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="32"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="33"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="34"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="35"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="36"></td> 
+    </tr>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="37"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="38"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="39"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="40"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="41"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="42"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="43"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="44"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="45"></td> 
+    </tr>
+    <tr> <td><input type="number" oninput="onChange(this.id)" id="46"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="47"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="48"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="49"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="50"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="51"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="52"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="53"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="54"></td> 
+    </tr>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="55"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="56"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="57"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="58"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="59"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="60"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="61"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="62"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="63"></td> 
+    </tr>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="64"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="65"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="66"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="67"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="68"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="69"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="70"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="71"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="72"></td> 
+    </tr>
+    <tr> 
+      <td><input type="number" oninput="onChange(this.id)" id="73"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="74"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="75"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="76"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="77"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="78"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="79"></td> 
+      <td><input type="number" oninput="onChange(this.id)" id="80"></td>
+      <td><input type="number" oninput="onChange(this.id)" id="81"></td> 
+    </tr>
+    </table>
+     <div class="last">
+       <label>How many inputs should be computer generted?(less the number, more the difficulty)</label>
+    <input type="number" id="dif" oninput="difficulty()" placeholder= "56">
+       </div>
+  </div>
+</div>
+    <div class="lastbuttons">
+        <a href="#" class="cta">
+            <span><button type="button" onclick="getSetup()"> Generate Sudoku</button></span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+          
+          <a href="#" class="cta">
+            <span> <button type="button"
+                onclick="solver()"
+                            > Solve it!</button></span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+          <a href="#" class="cta">
+            <span> <button type="button" onclick="clearInput()"> Clear Input</button> <span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+          <a href="#" class="cta">
+            <span> <button type="button"
+                onclick="clearTable()"> Get empty board</button> <span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+          <a href="#" class="cta">
+            <span> <button type="button" 
+                onclick="checkInput()"> Check</button> <span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+          
+       
+        
+     
+        
+        
+    </div>
+
+    
+</body>
+</html>
